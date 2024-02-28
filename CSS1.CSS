@@ -1,0 +1,91 @@
+body{
+   
+    background-color: orange;
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    color: #1f1a1a;
+}
+.aa{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    size: 2px;
+    color: blanchedalmond;
+}
+#ma{
+   padding-top: 3px;
+}
+.nav-item{
+    inline-size: none
+}
+
+.bb{
+    width: 35%;
+    height: 35%;
+    border: 12px solid black;
+    border-radius: 10%;
+    background-color: black;
+}
+
+.bb:hover{
+    opacity: 0.5;
+}
+#jj{
+    display: flex ;
+    text-align:left;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    
+}
+#manila{
+    margin-left: 32%;
+    margin-top: 1%;
+}
+#i{
+    background:white;
+    border: red none 5px;
+    padding: 5%; 
+    margin: 2%;
+    border-radius: 2%;
+}
+h1{
+    color: #ca6d15;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+#m{
+border: red 5px dotted;
+padding: 5%;
+margin:5%;
+}
+#f{
+
+    border: #ca6d15 solid;
+    padding: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+div #OO{
+    color: #d87111;
+    font-size: 4rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: leftSideAni 1s ease forwards;
+    animation-delay: 1s;
+}
+ section #q {
+    border:solid 5px red;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    background:white;
+    padding: 5%; 
+    margin: 2%;
+}
+.card-img-top{
+    width: 250px;
+    height: 200px;
+    margin-left:5%;
+    margin-top: 5%;
+    margin-right: 5%;
+}

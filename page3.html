@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS1.CSS">
+</head>
+<body>
+    <script src="hh.js"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="my page.html">YOU CAN!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="page1.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="page2.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  BUY
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+ <section>
+   <div id="i">
+    <div id="f">
+        <form  action="ajout.php">
+            <fieldset>
+                <legend>Leee</legend>
+                <label for="">Nom et Prenom:</label>
+                <input type="text" size="20" id="nom">
+                <label for="">Genre:</label>
+                <input type="radio" value="H" id="homme">Homme
+                <input type="radio" value="F" id="femme">Femme
+                <label for="">Ville:</label>
+                <select id="ville">
+                    <option>choisir une ville</option>
+                    <option>Tunis</option>
+                    <option>Sousse</option>
+                    <option>Sfax</option>
+                </select>
+                <label>nombre d'heures:</label>
+                <input type="number" id="nbh" size="1" onChange="prixtotal(this.value)"> <span>(10 dt par heure)</span><br><br>
+                <label >Prix Total:</label>
+                <label id="res">0 dinars</label>
+                 <script language="javascript">
+						function prixtotal(x)
+						{
+                            x=Number(x)
+                            total=x*10;
+                            document.getElementById("res").innerHTML=total+" dinars";
+							
+						}
+				 </script>
+
+             
+
+                    <input type="submit" value="Envoyer" onclick= 'return verif1()' onclick='return prixtotal()'>
+                    <input type="reset" value="Rétablir" name="B2">
+                
+            </fieldset>
+        </form>
+
+    </div>
+   </div>
+</body>
+</html>
